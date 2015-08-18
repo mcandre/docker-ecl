@@ -2,7 +2,7 @@
 
 # DOCKER HUB
 
-https://registry.hub.docker.com/u/mcandre/docker-clisp/
+https://registry.hub.docker.com/u/mcandre/docker-ecl/
 
 # EXAMPLE
 
