@@ -8,9 +8,9 @@ https://registry.hub.docker.com/u/mcandre/docker-ecl/
 
 ```
 $ make
-docker run --rm mcandre/docker-ecl:latest ecl -q -q --version
+docker run --rm mcandre/docker-ecl:latest ecl --version
 ECL 13.5.1
-docker run --rm mcandre/docker-ecl:latest ecl -q -q -eval "(format t (ql:client-version))"
+docker run --rm mcandre/docker-ecl:latest ecl -eval "(format t (ql:client-version))"
 ;;; Loading "/root/quicklisp/setup.lisp"
 ;;; Loading #P"/usr/lib/ecl-13.5.1/cmp.fas"
 ;;; Loading #P"/usr/lib/ecl-13.5.1/asdf.fas"
