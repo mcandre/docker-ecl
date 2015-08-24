@@ -7,7 +7,7 @@ build: Dockerfile
 
 run: clean-containers build
 	docker run --rm $(IMAGE) ecl --version
-	docker run --rm $(IMAGE) ecl -eval "(format t (ql:client-version))"
+	docker run --rm $(IMAGE) ecl -eval "(format t (ql:client-version))" -eval "(quit)"
 
 clean-containers:
 	-docker ps -a | grep -v IMAGE | awk '{ print $$1 }' | xargs docker rm -f

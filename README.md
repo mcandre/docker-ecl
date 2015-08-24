@@ -10,19 +10,11 @@ https://registry.hub.docker.com/u/mcandre/docker-ecl/
 $ make
 docker run --rm mcandre/docker-ecl:latest ecl --version
 ECL 13.5.1
-docker run --rm mcandre/docker-ecl:latest ecl -eval "(format t (ql:client-version))"
+docker run --rm mcandre/docker-ecl:latest ecl -eval "(format t (ql:client-version))" -eval "(quit)"
 ;;; Loading "/root/quicklisp/setup.lisp"
 ;;; Loading #P"/usr/lib/ecl-13.5.1/cmp.fas"
 ;;; Loading #P"/usr/lib/ecl-13.5.1/asdf.fas"
-2015-06-16ECL (Embeddable Common-Lisp) 13.5.1 (git:UNKNOWN)
-Copyright (C) 1984 Taiichi Yuasa and Masami Hagiya
-Copyright (C) 1993 Giuseppe Attardi
-Copyright (C) 2000 Juan J. Garcia-Ripoll
-ECL is free software, and you are welcome to redistribute it
-under certain conditions; see file 'Copyright' for details.
-Type :h for Help.
-Top level in: #<process TOP-LEVEL>.
->
+2015-06-16
 ```
 
 # REQUIREMENTS
