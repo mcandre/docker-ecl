@@ -24,6 +24,7 @@ docker run --rm mcandre/docker-ecl:latest ecl -eval "(format t (ql:client-versio
 ## Optional
 
 * [make](http://www.gnu.org/software/make/)
+* [Node.js](https://nodejs.org/en/) (for dockerlint)
 
 ## Debian/Ubuntu
 
