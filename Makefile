@@ -20,13 +20,10 @@ clean-layers:
 
 clean: clean-containers clean-images clean-layers
 
-editorconfig:
-	flcl . | xargs -n 100 editorconfig-cli check
-
 dockerlint:
 	$(shell npm bin)/dockerlint
 
-lint: editorconfig dockerlint
+lint: dockerlint
 
 publish:
 	docker push $(IMAGE)
